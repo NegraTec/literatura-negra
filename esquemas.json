@@ -1,0 +1,24 @@
+[
+  {
+    "tabela": "obras",
+    "titulo": "",
+    "autora": "",
+    "numero_paginas": "",
+    "genero_literario": "",
+    "good_reads": "",
+    "skoob": "",
+    "isbn": "",
+    "ano": ""
+  },
+  {
+    "tabela": "autoras",
+    "nome": "",
+    "nacionalidade": "",
+    "Bio":"",
+    "url":"",
+    "identidade_genero": "",
+    "good_reads": "",
+    "skoob": "",
+    "imagem": ""
+  }
+]
