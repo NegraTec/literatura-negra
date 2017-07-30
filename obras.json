@@ -3,11 +3,12 @@
     "titulo": "Quarto de Despejo",
     "autora": "Carolina Maria de Jesus",
     "numero_paginas": "184",
-    "genero_literario": "",
+    "genero_literario": "Biografia, Autobiografia, Memórias / Romance",
     "good_reads": "https://www.goodreads.com/book/show/6455464-quarto-de-despejo",
     "skoob": "https://www.skoob.com.br/quarto-de-despejo-7123ed8333.html",
     "isbn": "9788508105311",
-    "ano": ""
+    "ano": "1976",
+    "capa": "https://skoob.s3.amazonaws.com/livros/7123/QUARTO_DE_DESPEJO_14462541737123SK1446254173B.jpg"
   },
   {
     "titulo": "Pedaços de Fome",
@@ -17,17 +18,19 @@
     "good_reads": "https://www.goodreads.com/book/show/30286162-peda-os-da-fome",
     "skoob": "https://www.skoob.com.br/livro/347681ED390206",
     "isbn": "",
-    "ano": ""
+    "ano": "1963",
+    "capa": "https://skoob.s3.amazonaws.com/livros/347681/PEDACOS_DA_FOME_1379777471B.jpg"
   },
   {
     "titulo": "Provérbios",
     "autora": "Carolina Maria de Jesus",
     "numero_paginas": "61",
-    "genero_literario": "",
+    "genero_literario": "Biografia, Autobiografia, Memórias",
     "good_reads": "https://www.goodreads.com/book/show/30286142-prov-rbios---carolina-maria-de-jesus",
     "skoob": "https://www.skoob.com.br/livro/528550ED536721",
     "isbn": "",
-    "ano": "1963"
+    "ano": "1963",
+    "capa": "https://skoob.s3.amazonaws.com/livros/528550/PROVERBIOS_1443266215528550SK1443266215B.jpg"
   },
   {
     "titulo": "Diário de Bitita",
@@ -37,7 +40,8 @@
     "good_reads": "https://www.goodreads.com/book/show/30286148-di-rio-de-bitita",
     "skoob": "https://www.skoob.com.br/livro/19030ED20361",
     "isbn": "9788582054826",
-    "ano": "1986"
+    "ano": "1986",
+    "capa": "https://skoob.s3.amazonaws.com/livros/19030/DIARIO_DE_BITITA_143584773819030SK1435847738B.jpg"
   },
   {
   "titulo": "Um Brasil para brasileiros",
@@ -47,26 +51,95 @@
   "good_reads": "",
   "skoob": "",
   "isbn": "",
-  "ano": "1982"
+  "ano": "1982",
+  "capa": ""
   },
   {
     "titulo": "Meu estranho diário",
     "autora": "Carolina Maria de Jesus",
     "numero_paginas": "314",
-    "genero_literario": "",
+    "genero_literario": "Biografia, Autobiografia, Memórias",
     "good_reads": "",
     "skoob": "https://www.skoob.com.br/livro/537956ED547151",
     "isbn": "9788585833183",
-    "ano": "1996"
+    "ano": "1996",
+    "capa": ""
   },
   {
     "titulo": "Antologia Pessoal",
     "autora": "Carolina Maria de Jesus",
     "numero_paginas": "236",
-    "genero_literario": "",
+    "genero_literario": "Poemas, poesias",
     "good_reads": "https://www.goodreads.com/book/show/3744524-antologia-pessoal",
     "skoob": "https://www.skoob.com.br/livro/424364ED480592",
     "isbn": "9788571081758",
-    "ano": "1996"
+    "ano": "1996",
+    "capa": "https://skoob.s3.amazonaws.com/livros/424364/ANTOLOGIA_PESSOAL_1417341231424364SK1417341231B.jpg"
+  },
+  {
+    "titulo": "Esse Cabelo",
+    "autora": "Djaimilia Pereira de Almeida",
+    "numero_paginas": "160",
+    "genero_literario": "Ficção / Literatura Estrangeira / Romance",
+    "good_reads": "https://www.goodreads.com/book/show/26162932-esse-cabelo",
+    "skoob": "https://www.skoob.com.br/livro/582734ED584281",
+    "isbn": "9789724750385",
+    "ano": "2015",
+    "capa": "https://skoob.s3.amazonaws.com/livros/582734/ESSE_CABELO_1462418857582734SK1462418857B.jpg"
+  },
+  {
+    "titulo": "Olhos d’água",
+    "autora": "Conceição Evaristo",
+    "numero_paginas": "116",
+    "genero_literario": "Contos / Ficção / Literatura Brasileira",
+    "good_reads": "https://www.goodreads.com/book/show/31111797-olhos-d-gua",
+    "skoob": "https://www.skoob.com.br/livro/432240ED489677",
+    "isbn": "9788534705257",
+    "ano": "2014",
+    "capa": "https://skoob.s3.amazonaws.com/livros/432240/OLHOS_DAGUA_1421716218432240SK1421716218B.jpg"
+  },
+  {
+    "titulo": "Insubmissas lágrimas de mulheres",
+    "autora": "Conceição Evaristo",
+    "numero_paginas": "120",
+    "genero_literario": "Literatura Brasileira",
+    "good_reads": "https://www.goodreads.com/book/show/27810537-insubmissas-l-grimas-de-mulheres",
+    "skoob": "https://www.skoob.com.br/livro/240841ED269519",
+    "isbn": "9788561191573",
+    "ano": "2011",
+    "capa": "https://skoob.s3.amazonaws.com/livros/240841/INSUBMISSAS_LAGRIMAS_DE_MULHERES_1415584324B.jpg"
+  },
+  {
+    "titulo": "Ponciá Vicêncio",
+    "autora": "Conceição Evaristo",
+    "numero_paginas": "120",
+    "genero_literario": "",
+    "good_reads": "https://www.goodreads.com/book/show/1947209.Ponci_Vic_ncio",
+    "skoob": "https://www.skoob.com.br/poncia-vicencio-681935ed684309.html",
+    "isbn": "9788534705318",
+    "ano": "2006",
+    "capa": "https://images.gr-assets.com/books/1383631064l/18753858.jpg"
+  },
+  {
+    "titulo": "Histórias de leves enganos e parecenças",
+    "autora": "Conceição Evaristo",
+    "numero_paginas": "108",
+    "genero_literario": "Contos",
+    "good_reads": "https://www.goodreads.com/book/show/33015223-hist-rias-de-leves-enganos-e-parecen-as",
+    "skoob": "https://www.skoob.com.br/historias-de-leves-enganos-e-parecencas-594457ed595703.html",
+    "isbn": "9788592736002",
+    "ano": "2016",
+    "capa": "https://skoob.s3.amazonaws.com/livros/594457/HISTORIAS_DE_LEVES_ENGANOS_E_P_1467420836594457SK1467420836B.jpg"
+  },
+  {
+    "titulo": "Becos da Memória",
+    "autora": "Conceição Evaristo",
+    "numero_paginas": "168",
+    "genero_literario": "",
+    "good_reads": "https://www.goodreads.com/book/show/18672253-becos-da-mem-ria",
+    "skoob": "https://www.skoob.com.br/livro/175295ED249842",
+    "isbn": "9788571603752",
+    "ano": "2006",
+    "capa": "https://skoob.s3.amazonaws.com/livros/175295/BECOS_DA_MEMORIA_1330708119B.jpg"
   }
 ]

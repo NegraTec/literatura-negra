@@ -9,5 +9,27 @@ Quarto de Despejo foi seu maior sucesso, mesmo assim não é tarefa das mais fá
     "good_reads": "https://www.goodreads.com/author/show/35281.Carolina_Maria_de_Jesus",
     "skoob": "https://www.skoob.com.br/autor/11501-carolina-maria-de-jesus",
     "imagem": "https://s3.amazonaws.com/shereland-s3/media/uploads/2016/03/24/carolina-maria-de-jesus.jpg"
+  },
+  {
+    "nome": "Djaimilia Pereira de Almeida",
+    "nacionalidade": "Angola",
+    "Bio":"Em 2013, foi uma das vencedoras do prémio de ensaísmo serrote (Instituto Moreira Salles, Brasil). No mesmo ano, fundou com Humberto Brito a revista Forma de Vida, que dirigiram até 2016. Publicou em Afrolis, Buala, Common Knowledge, Diacrítica, Forma de Vida, Granta, Ler, Observador, Pessoa, serrote, Somos Livros, Words Without Borders, e XXI. Esse Cabelo (Teorema/Leya, 2015), vencedor do Prémio Novos - Literatura 2016, é o seu primeiro livro. No início de 2016, foi uma das finalistas da Rolex Mentor and Protégé Arts Initiative. Escreve mensalmente na revista Pessoa sobre Interiores/Exteriores.",
+    "url":"http://djaimilia.com/",
+    "identidade_genero": "feminino",
+    "good_reads": "https://www.goodreads.com/author/show/14234316.Djaimilia_Pereira_de_Almeida",
+    "skoob": "",
+    "imagem": "https://static1.squarespace.com/static/4f93e29ae4b02e268cba41d8/t/58eea84b29687fbef79c7c3b/1492035668267/?format=1500w"
+  },
+  {
+    "nome": "Conceição Evaristo",
+    "nacionalidade": "Brasil",
+    "Bio":"É Mestre em Literatura Brasileira pela PUC-Rio, e Doutora em Literatura Comparada pela Universidade Federal Fluminense.
+
+Suas obras, em especial o romance Ponciá Vicêncio, de 2003, abordam temas como a discriminação racial, de gênero e de classe. A obra foi traduzida para o idioma inglês e publicada nos Estados Unidos em 2007. Fonte: https://www.goodreads.com/author/show/885158.Concei_o_Evaristo",
+    "url":"",
+    "identidade_genero": "feminino",
+    "good_reads": "https://www.goodreads.com/author/show/885158.Concei_o_Evaristo",
+    "skoob": "https://www.skoob.com.br/autor/11503-conceicao-evaristo",
+    "imagem": "https://images.gr-assets.com/authors/1401751469p5/885158.jpg"
   }
 ]
