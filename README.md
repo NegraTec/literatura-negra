@@ -12,3 +12,9 @@ Faça o clone do repositório em sua máquina.
 Na pasta do projeto rode `docker build -t literatura-negra .`
 
 Para rodar o servidor `sh literaturanegra/scripts/run-server.sh`
+
+Rodar o console do django `docker-compose run web python literaturanegra/manage.py shell`
+
+Rodar migrate e makemigrations `docker-compose run web python literaturanegra/manage.py migrate`
+
+`docker-compose run web python literaturanegra/manage.py makemigrations`
