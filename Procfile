@@ -1,2 +1,2 @@
-web: gunicorn literaturanegra.wsgi --log-file -
+web: gunicorn literaturanegra.literaturanegra.wsgi --log-file -
 
