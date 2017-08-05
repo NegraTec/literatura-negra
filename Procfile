@@ -1,2 +1,2 @@
-web: python literaturanegra/manage.py migrate
-web: python literaturanegra/manage.py runserver
+web: gunicorn gettingstarted.wsgi --log-file -
+
