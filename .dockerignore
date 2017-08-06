@@ -4,3 +4,5 @@ README.md
 .git
 .idea
 .env-sample
+myvenv
+.DS_Store
