@@ -9,3 +9,6 @@ class Autoras(models.Model):
     good_reads = models.CharField(max_length=50)
     skoob = models.CharField(max_length=50)
     imagem = models.CharField(max_length=50)
+
+    def __str__(self):
+        return "%s" % (self.nome)
