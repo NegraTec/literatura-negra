@@ -1,0 +1,18 @@
+{% extends 'autoras/base.html' %}
+
+{% block content %}
+
+<div class="introducao">
+    Olá bem vinda/o ao Literatura Negra.
+    Aqui você encontrará autores e autoras negras, brasileiras ou estrangeiras.
+    Estamos começando a coletar autoras negras independente da nacionalidade.
+</div>
+
+ {% for autora in autoras %}
+        <div class="autoras">
+
+            <p><a href="">{{ autora.nome }}</a></p>
+
+        </div>
+ {% endfor %}
+{% endblock %}

@@ -1,4 +1,6 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+from .models import Autoras
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    autoras = Autoras.objects.all()
+    return render(request, 'autoras/base.html', {'autoras': autoras})
