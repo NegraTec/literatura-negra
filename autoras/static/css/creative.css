@@ -147,7 +147,7 @@ header.masthead {
   min-height: auto;
   text-align: center;
   color: white;
-  background-image: url("../img/carolina.jpg");
+  background-image: url("../img/conceicao-ana-maria.png");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -217,7 +217,7 @@ header.masthead {
     text-align: center;
     opacity: 0;
     color: white;
-    background: rgba(240, 95, 64, 0.9);
+    background: rgba(240, 95, 64, 0.5);
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s; }

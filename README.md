@@ -5,6 +5,8 @@ Listar autores e autoras negras, nacionais e internacionais.
 Primeiro começarei coletando a informação das pessoas e seus livros em json.
 Próximo passo construir website para mostrar essas informações.
 
+Layout feito com bootstrap theme creative
+
 ## Contribuindo
 
 Faça o clone do repositório em sua máquina.

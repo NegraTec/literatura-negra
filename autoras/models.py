@@ -3,7 +3,7 @@ from django.db import models
 class Autoras(models.Model):
     nome = models.CharField(max_length=100)
     nacionalidade = models.CharField(max_length=50)
-    bio = models.CharField(max_length=300)
+    bio = models.TextField()
     url = models.CharField(max_length=150)
     identidade_genero = models.CharField(max_length=50)
     good_reads = models.CharField(max_length=150)
