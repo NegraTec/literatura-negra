@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '1#kfvdv6u%@ft(j7d26!0*wiwo!pi=ov0nb6n#c&%yr1b_0r1v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = ['localhost','stg-literatura-negra.herokuapp.com', 'literatura-negra.herokuapp.com']
 
