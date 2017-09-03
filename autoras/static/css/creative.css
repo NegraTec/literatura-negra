@@ -203,6 +203,10 @@ header.masthead {
   .service-box p {
     margin-bottom: 0; }
 
+.portfolio-box .img-fluid{
+    height: 350px;
+}
+
 .portfolio-box {
   position: relative;
   display: block;
