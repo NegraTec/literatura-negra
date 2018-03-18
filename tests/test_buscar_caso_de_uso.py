@@ -1,7 +1,7 @@
 from  unittest import TestCase
 from unittest.mock import Mock
 from servicos.django_servico import DjangoServico
-from .factories.autora_factory import BuscarAutoraInfo
+from .factories.buscar_autora_info_factory import BuscarAutoraInfo
 from autoras.buscar_autora_caso_de_uso import BuscarAutoraCasoDeUso
 
 class TestBuscarCasoDeUso(TestCase):
