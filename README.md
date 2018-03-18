@@ -25,4 +25,10 @@ Rodar migrate e makemigrations `docker-compose run web python manage.py migrate`
 
 Criar usuária admin: `docker-compose run web python manage.py createsuperuser`
 
-Executar os testes: `docker-compose run web python -m unittest`
+Executar os testes unitários: `docker-compose run web python -m unittest`
+
+Testes de integração: `docker-compose run web python manage.py test`
+
+## Esquema do banco de dados
+
+https://drive.google.com/file/d/1xM9DAc6WUjQp5XyFI7opsGnNEY8t-Km8/view?usp=sharing
