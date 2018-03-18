@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/NegraTec/literatura-negra.svg?style=svg)](https://circleci.com/gh/NegraTec/literatura-negra)
+
 # literatura-negra
 
 Listar autores e autoras negras, nacionais e internacionais.
