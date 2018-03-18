@@ -44,7 +44,7 @@ jobs:
           name: testes unitarios
           command: |
             . venv/bin/activate
-            python -m unittest
+            python manage.py test
 
       - store_artifacts:
           path: test-reports
