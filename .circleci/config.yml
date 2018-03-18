@@ -41,10 +41,10 @@ jobs:
       # https://pytest.org
       # https://nose.readthedocs.io
       - run:
-          name: run tests
+          name: testes unitarios
           command: |
             . venv/bin/activate
-            python manage.py test -v 2
+            python -m unittest
 
       - store_artifacts:
           path: test-reports
