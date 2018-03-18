@@ -22,3 +22,5 @@ Rodar migrate e makemigrations `docker-compose run web python manage.py migrate`
 `docker-compose run web python manage.py makemigrations`
 
 Criar usuária admin: `docker-compose run web python manage.py createsuperuser`
+
+Executar os testes: `docker-compose run web python -m unittest`

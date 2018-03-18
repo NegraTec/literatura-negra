@@ -2,3 +2,4 @@ django
 psycopg2
 gunicorn
 whitenoise
+factory_boy
