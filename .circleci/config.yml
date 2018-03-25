@@ -67,7 +67,7 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - build
+      - testes_unitarios
       - testes_integracao:
          requires:
-           - build
+           - testes_unitarios
