@@ -68,4 +68,6 @@ workflows:
   build_and_test:
     jobs:
       - build
-      - testes_integracao
+      - testes_integracao:
+         requires:
+           - build
