@@ -9,7 +9,7 @@ jobs:
       - image: postgres:9.6
         environment:
           POSTGRES_USER=lit-user
-          POSTGRES_DB=literatura
+	  POSTGRES_DB=literatura
 	  POSTGRES_PASSWORD=mysecretpassword
 
     working_directory: ~/repo
