@@ -6,7 +6,7 @@ jobs:
       - image: circleci/python:3.6.1
       - image: postgres:9.6
         environment:
-          POSTGRES_USER=lit-user
+          POSTGRES_USER=circleci
           POSTGRES_DB=literatura
           POSTGRES_PASSWORD=mysecretpassword
     working_directory: ~/repo
