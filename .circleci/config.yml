@@ -85,7 +85,10 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - testes_unitarios
+      - analise_seguranca
+      - testes_unitarios:
+         requires:
+           - analise_seguranca
       - testes_integracao:
          requires:
            - testes_unitarios
