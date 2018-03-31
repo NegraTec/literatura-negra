@@ -3,3 +3,5 @@ psycopg2-binary
 gunicorn
 whitenoise
 factory_boy
+safety
+bandit
