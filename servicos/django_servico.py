@@ -1,29 +1,28 @@
 from autoras.models import Autoras, Obras
 from infos.autora_info import AutoraInfo
+from infos.obras_info import ObrasInfo
+
+
 class DjangoServico:
 
-    @staticmethod
-    def obter_autoras_por_nome(nome):
+    def obter_autoras_por_nome(self, nome):
         autoras = Autoras.objects.filter(nome__contains=nome)
 
-        return DjangoServico._build_autoras_info(autoras)
+        return self._build_autoras_info(autoras)
 
-    @staticmethod
-    def obter_autoras_por_nacionalidade(nacionalidade):
+    def obter_autoras_por_nacionalidade(self, nacionalidade):
         autoras = Autoras.objects.filter(nacionalidade__iexact=nacionalidade)
 
-        return DjangoServico._build_autoras_info(autoras)
+        return self._build_autoras_info(autoras)
 
-    @staticmethod
-    def obter_autoras_por_genero_literario(genero_literario):
+    def obter_autoras_por_genero_literario(self, genero_literario):
         obras = Obras.objects.filter(genero_literario__iexact=genero_literario).distinct('autora')
 
         autoras = Autoras.objects.filter(id__in=obras)
 
-        return DjangoServico._build_autoras_info(autoras)
+        return self._build_autoras_info(autoras)
 
-    @staticmethod
-    def _build_autoras_info(autoras_model):
+    def _build_autoras_info(self, autoras_model):
         autoras_info = []
         if(len(autoras_model)):
            for autora in autoras_model:
@@ -35,4 +34,12 @@ class DjangoServico:
                )
         return autoras_info
 
+    def obter_obras_por_autora(self, autora_nome):
+        autora = Autoras.objects.filter(nome__contains=autora_nome)
 
+        obras = Obras.objects.filter(autora__in=autora)
+
+        return self._constroe_obras_info(obras)
+
+    def _constroe_obras_info(self, obras_model):
+        return [ObrasInfo(titulo=obra.titulo).__dict__ for obra in obras_model]
