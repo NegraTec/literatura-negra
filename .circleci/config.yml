@@ -51,6 +51,7 @@ jobs:
   testes_integracao:
     <<: *defaults
     steps:
+      - checkout
       - run:
           name: install dependencies
           command: |
