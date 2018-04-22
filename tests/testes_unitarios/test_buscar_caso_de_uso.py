@@ -63,16 +63,35 @@ class TestBuscarCasoDeUso(TestCase):
         
         django_servico = self._moca_django_servico()
         django_servico.obter_autoras_por_nome.return_value = [autora_1, autora_2]
+        django_servico.obter_autoras_por_nacionalidade.return_value = [autora_1]
+        django_servico.obter_autoras_por_genero_literario.return_value = [autora_2]
         django_servico.obter_obras_por_autora.return_value = [obras_1, obras_2]
 
         resultados_encontrados = BuscarAutorasCasoDeUso(django_servico).executar("Romance")
 
-        self.assertEqual(len(resultados_encontrados), 4)
+        self.assertEqual(len(resultados_encontrados), 6)
         self.assertEqual(resultados_encontrados[0]['nome'], "Carolina de Jesus")
         self.assertEqual(resultados_encontrados[1]['nome'], "Carolina")
-        self.assertEqual(resultados_encontrados[2]['titulo'], "Quarto de Despejo")
-        self.assertEqual(resultados_encontrados[3]['titulo'], "Diário de Bitita")
+        self.assertEqual(resultados_encontrados[2]['nome'], "Carolina de Jesus")
+        self.assertEqual(resultados_encontrados[3]['nome'], "Carolina")
+        self.assertEqual(resultados_encontrados[4]['titulo'], "Quarto de Despejo")
+        self.assertEqual(resultados_encontrados[5]['titulo'], "Diário de Bitita")
 
+    def test_encontra_outros_criterios_exceto_por_nome(self):
+        autora_1 = AutoraInfo.build(nome="Carolina de Jesus").__dict__
+        autora_2 = AutoraInfo.build(nome="Carolina").__dict__
+        obras_1 = ObrasInfo.build().__dict__
+        obras_2 = ObrasInfo.build(titulo="Diário de Bitita").__dict__
+        
+        django_servico = self._moca_django_servico()
+        django_servico.obter_autoras_por_nome.return_value = [autora_1]
+
+        resultados_encontrados = BuscarAutorasCasoDeUso(django_servico).executar("Romance")
+        django_servico.obter_autoras_por_nome.assert_called_with("Romance")
+        django_servico.obter_autoras_por_nacionalidade.assert_called_with("Romance")
+        django_servico.obter_autoras_por_genero_literario.assert_called_with("Romance")
+        django_servico.obter_obras_por_autora.assert_called_with("Romance")
+        
     def _moca_django_servico(self):
         django_servico = Mock(spec=DjangoServico)
         django_servico.obter_autoras_por_nome.return_value = []
