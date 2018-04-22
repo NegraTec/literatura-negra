@@ -111,6 +111,26 @@ jobs:
               docker push registry.heroku.com/stg-literatura-negra/web
             fi
 
+  deploy_producao:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/python:3.6.1
+    steps:
+      - checkout
+      - run:
+          name: setup Heroku
+          command: bash .circleci/setup-heroku-prod.sh
+      - setup_remote_docker
+      - deploy:
+          name: Deploy to Production
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              docker build -t literatura-negra .
+              docker login -u $HEROKU_LOGIN -p $HEROKU_API_KEY registry.heroku.com
+              docker tag literatura-negra:latest registry.heroku.com/literatura-negra/web
+              docker push registry.heroku.com/literatura-negra/web
+            fi
+
 workflows:
   version: 2
   build_and_test:
@@ -125,3 +145,7 @@ workflows:
       - deploy_staging:
          requires:
            - testes_integracao
+      - deploy_producao:
+         type: approval
+         requires:
+           - deploy_staging
