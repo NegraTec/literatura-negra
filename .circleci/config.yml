@@ -10,7 +10,7 @@ defaults: &defaults
 
 version: 2
 jobs:
-  analise_seguranca:
+  analise_seguranca_e_estatica:
     working_directory: ~/repo
     docker:      
       - image: circleci/python:3.6.1
@@ -30,6 +30,7 @@ jobs:
             . venv/bin/activate
             safety check
             bandit -r -v .
+            prospector
   testes_unitarios:
     <<: *defaults
     steps:

@@ -24,9 +24,9 @@ class DjangoServico:
 
     def _build_autoras_info(self, autoras_model):
         autoras_info = []
-        if(len(autoras_model)):
-           for autora in autoras_model:
-               autoras_info.append(
+        if(autoras_model):
+            for autora in autoras_model:
+                autoras_info.append(
                    AutoraInfo(
                        nome = autora.nome,
                        nacionalidade = autora.nacionalidade
