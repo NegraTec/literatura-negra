@@ -6,3 +6,4 @@ myvenv
 .DS_Store
 *.py~
 env
+*.sh~

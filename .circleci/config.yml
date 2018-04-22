@@ -84,6 +84,25 @@ jobs:
           command: |
             . venv/bin/activate
             python manage.py test tests.testes_integracao
+  deploy_staging:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/python:3.6.1
+    steps:
+      - checkout
+      - run:
+          name: setup Heroku
+          command: bash .circleci/setup-heroku.sh
+      - setup_remote_docker
+      - deploy:
+          name: Deploy to Staging
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              docker build -t literatura-negra .
+              docker login -u $HEROKU_LOGIN -p $HEROKU_API_KEY registry.heroku.com
+              docker tag literatura-negra:latest registry.heroku.com/literatura-negra/web
+              docker push registry.heroku.com/literatura-negra/web
+            fi
 
 workflows:
   version: 2
@@ -96,3 +115,6 @@ workflows:
       - testes_integracao:
          requires:
            - testes_unitarios
+      - deploy_staging:
+         requires:
+           - testes_integracao
