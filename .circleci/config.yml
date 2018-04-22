@@ -98,10 +98,10 @@ jobs:
           name: Deploy to Staging
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              docker build -t literatura-negra .
+              docker build -t stg-literatura-negra .
               docker login -u $HEROKU_LOGIN -p $HEROKU_API_KEY registry.heroku.com
-              docker tag literatura-negra:latest registry.heroku.com/literatura-negra/web
-              docker push registry.heroku.com/literatura-negra/web
+              docker tag stg-literatura-negra:latest registry.heroku.com/stg-literatura-negra/web
+              docker push registry.heroku.com/stg-literatura-negra/web
             fi
 
 workflows:
